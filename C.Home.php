@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['company_email']) && !isset($_SESSION['graduate_email'])) {
+    header("Location: KhebrahPlatformLogin.php");
+    exit;
+}
+?>
+
+
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
