@@ -1,0 +1,332 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      خبرة - منصة التطوير المهني والتوظيف | اختبارات عملية بالذكاء الاصطناعي
+    </title>
+    <meta
+      name="description"
+      content="منصة خبرة تقدم اختبارات عملية ومحاكاة لمواقف العمل الحقيقية بالذكاء الاصطناعي. بناء خبرة موثقة، مسارات تعلم مخصصة، ومهام حقيقية من الشركات للحصول على فرص عمل."
+    />
+    <meta
+      name="keywords"
+      content="تطوير مهني, اختبارات عملية, ذكاء اصطناعي, توظيف, مهارات برمجة, خبرة عملية, محاكاة العمل"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="خبرة - منصة التطوير المهني والتوظيف" />
+    <meta
+      property="og:description"
+      content="منصة خبرة تقدم اختبارات عملية ومحاكاة لمواقف العمل الحقيقية بالذكاء الاصطناعي لبناء خبرة موثقة."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main >
+      <!-- Header Section -->
+      <header class="home-header">
+        <div class="header-content">
+          <div class="header-top">
+            <img
+              src="../assets/images/img_khebrah_logo_light.png"
+              alt="شعار خبرة"
+              class="logo-image"
+            />
+
+            <nav class="nav-section" role="navigation">
+              <a href="#outcome" class="home-nav-item" role="menuitem"
+                >ملخص الاحصائيات</a
+              >
+              <a href="#talent" class="home-nav-item" role="menuitem"
+                >المواهب والتوصيات</a
+              >
+            </nav>
+
+            <details class="dropdown">
+              <summary class="dropdown-btn" id="user-name">
+                <img
+                  src="../assets/images/img_si_expand_more_alt_line.svg"
+                  alt="Menu"
+                  class="menu-icon"
+                />
+                أهلاً ...
+              </summary>
+
+              <div class="dropdown-menu">
+                <a href="#home">الصفحة الرئيسية</a>
+                <a href="#tasksManage">إدارة المهام</a>
+                <a href="#review">مراجعة المرشحين</a>
+                <a href="#reports">التقارير المتقدمة</a>
+                <a href="#compFile">ملف الشركة</a>
+                <a href="#logout">تسجيل الخروج</a>
+              </div>
+            </details>
+          </div>
+          <div class="search-section">
+            <img
+              src="../assets/images/img_search.svg"
+              alt="بحث"
+              class="search-icon"
+            />
+            <span class="search-text"
+              >ابحث بالمهارة (مثل: python), الاسم, او اسم المهمة...</span
+            >
+          </div>
+        </div>
+      </header>
+
+      <section class="create-section">
+        <img
+          class="create-image"
+          src="../assets/images/pexels-thirdman-7984742 1.png"
+          alt="hero"
+        />
+        <button class="create-btn">إنشاء مهمة جديدة +</button>
+      </section>
+
+      <!-- Outcome Overview Section -->
+      <section class="section" id="outcome">
+        <div class="outcome-overview">
+          <div class="outcome-header">
+            <h1 class="home-title">ملخص الإحصائيات والأداء</h1>
+            <p class="home-description">
+              هذه البطاقات الأربعة تقدم لك نظرة عامة فورية ومحدثة على عمليات
+              التوظيف والتقييم الحالية تساعدك هذه المؤشرات على تحديد أولويات
+              المراجعة واتخاذ القرارات السريعة بناء على بيانات الأداء الفعلية
+            </p>
+          </div>
+
+          <div class="outcome-cards-grid">
+            <div class="outcome-card">
+              <span class="outcome-card-title">التحديات النشطة حاليا</span>
+              <span class="outcome-card-subtitle"
+                >تحديد فعالية استراتيجية الجذب وضمان استمرار تدفق المواهب</span
+              >
+              <output class="stat-number" data-value="0">8</output>
+              <button class="outcome-card-button">إدارة المهام</button>
+            </div>
+
+            <div class="outcome-card">
+              <span class="outcome-card-title">مرشحون جدد</span>
+              <span class="outcome-card-subtitle"
+                >قياس معدل التفاعل والتدفق اليومي للمواهب</span
+              >
+              <output class="stat-number" data-value="0">23</output>
+            </div>
+
+            <div class="outcome-card">
+              <span class="outcome-card-title"
+                >المرشحون في القائمة المختصرة</span
+              >
+              <span class="outcome-card-subtitle"
+                >تتبع مخرجات عملية الفرز الالي</span
+              >
+              <output class="stat-number" data-value="0">5</output>
+              <button class="outcome-card-button">مراجعة المرشحين</button>
+            </div>
+
+            <div class="outcome-card">
+              <span class="outcome-card-title">متوسط درجة إنجاز المهام</span>
+              <span class="outcome-card-subtitle"
+                >تقييم جودة مجموعة المتقدمين بشكل عام</span
+              >
+              <output class="stat-number" data-value="0">87%</output>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discovering talent Section -->
+      <section class="section" id="talent">
+        <div class="outcome-overview">
+          <div class="outcome-header">
+            <h1 class="home-title">ملخص الإحصائيات والأداء</h1>
+            <p class="home-description">
+              هذه البطاقات الأربعة تقدم لك نظرة عامة فورية ومحدثة على عمليات
+              التوظيف والتقييم الحالية تساعدك هذه المؤشرات على تحديد أولويات
+              المراجعة واتخاذ القرارات السريعة بناء على بيانات الأداء الفعلية
+            </p>
+          </div>
+          <div class="left-button">
+            <button class="more-button">عرض المزيد</button>
+          </div>
+        </div>
+
+        <div class="candidate-cards">
+          <div class="candidate-content">
+            <div class="info-row">
+              <span class="label">اسم المرشح: </span>
+              <span class="value" data-field="name">عبدالله فهد</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">الدرجة الكلية: </span>
+              <span class="value" data-field="total-score">89%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label"> نقطة القوة: </span>
+              <span class="value" data-field="strength"
+                >خبير في حل المشكلات المعقدة</span
+              >
+            </div>
+
+            <div class="info-row">
+              <span class="label">مطابقة المهمة: </span>
+              <span class="value" data-field="match">92%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">وظيفة: </span>
+              <span class="value" data-field="job"
+                >محلل بيانات ومخطط مشاريع</span
+              >
+            </div>
+
+            <div class="summary">
+              <span class="label">ملخص الانجاز: </span>
+              <p class="summary-text" data-field="summary">
+                أظهر قدرة عالية على التفكير النقدي في تحدي [Data Analysis] وتميز
+                في إعداد التقرير الإداري الموجز.
+              </p>
+            </div>
+
+            <div class="buttons">
+              <button class="btn primary">دعوة للمقابلة</button>
+              <button class="btn secondary">عرض الملف</button>
+            </div>
+          </div>
+          <div class="candidate-content">
+            <div class="info-row">
+              <span class="label">اسم المرشح: </span>
+              <span class="value" data-field="name">سارة فيصل</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">الدرجة الكلية: </span>
+              <span class="value" data-field="total-score">94%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label"> نقطة القوة: </span>
+              <span class="value" data-field="strength">كود نظيف موثق</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">مطابقة المهمة: </span>
+              <span class="value" data-field="match">98%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">وظيفة: </span>
+              <span class="value" data-field="job"
+                >مطور Back-End بلغة Python</span
+              >
+            </div>
+
+            <div class="summary">
+              <span class="label">ملخص الانجاز: </span>
+              <p class="summary-text" data-field="summary">
+                أكملت تحدي [API Optimization] في 70% من الوقت المحدد وحققت درجة
+                100% في جودة الكود.
+              </p>
+            </div>
+
+            <div class="buttons">
+              <button class="btn primary">دعوة للمقابلة</button>
+              <button class="btn secondary">عرض الملف</button>
+            </div>
+          </div>
+          <div class="candidate-content">
+            <div class="info-row">
+              <span class="label">اسم المرشح: </span>
+              <span class="value" data-field="name">فهد احمد</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">الدرجة الكلية: </span>
+              <span class="value" data-field="total-score">91%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label"> نقطة القوة: </span>
+              <span class="value" data-field="strength"
+                >خبير في التواصل التقني الفعال</span
+              >
+            </div>
+
+            <div class="info-row">
+              <span class="label">مطابقة المهمة: </span>
+              <span class="value" data-field="match">90%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">وظيفة: </span>
+              <span class="value" data-field="job">مهندس دعم فني</span>
+            </div>
+
+            <div class="summary">
+              <span class="label">ملخص الانجاز: </span>
+              <p class="summary-text" data-field="summary">
+                قدم تقريراً فنياً مثالياً في مهمة [Technical Documentation] وحقق
+                درجات كاملة في الوضوح والبساطة.
+              </p>
+            </div>
+
+            <div class="buttons">
+              <button class="btn primary">دعوة للمقابلة</button>
+              <button class="btn secondary">عرض الملف</button>
+            </div>
+          </div>
+          <div class="candidate-content">
+            <div class="info-row">
+              <span class="label">اسم المرشح: </span>
+              <span class="value" data-field="name">ريم خالد</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">الدرجة الكلية: </span>
+              <span class="value" data-field="total-score">85%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label"> نقطة القوة: </span>
+              <span class="value" data-field="strength"
+                >الالتزام بالموعد النهائي</span
+              >
+            </div>
+
+            <div class="info-row">
+              <span class="label">مطابقة المهمة: </span>
+              <span class="value" data-field="match">88%</span>
+            </div>
+
+            <div class="info-row">
+              <span class="label">وظيفة: </span>
+              <span class="value" data-field="job"
+                >مطور واجهة أمامية سريعة</span
+              >
+            </div>
+
+            <div class="summary">
+              <span class="label">ملخص الانجاز: </span>
+              <p class="summary-text" data-field="summary">
+                تفوقت في تحدي [Emergency Bug Fix]، وحافظت على درجة عالية من
+                الجودة رغم القيود الزمنية المفروضة.
+              </p>
+            </div>
+
+            <div class="buttons">
+              <button class="btn primary">دعوة للمقابلة</button>
+              <button class="btn secondary">عرض الملف</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
