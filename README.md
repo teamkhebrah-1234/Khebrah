@@ -1,4 +1,3 @@
-```markdown
 # Khebrah Platform
 
 ## Overview
@@ -15,7 +14,7 @@ At the same time, employers can observe real performance instead of relying only
 
 ## Project Structure
 
-```
+```markdown
 khebrah/
 │   .gitignore
 │   db.php
@@ -96,8 +95,8 @@ khebrah/
 - `graduate_register.php` - Graduate registration
 - `KhebrahAccountSelection.html` - Account type selection
 - `KhebrahPlatformLandingPage.html` - Platform landing page
-- `KhebrahPlatformRegistration.html` - Registration page variant 1
-- `KhebrahPlatformRegistration1.html` - Registration page variant 2
+- `KhebrahPlatformRegistration.html` - Registration page for company
+- `KhebrahPlatformRegistration1.html` - Registration page for graduate
 - `style.css` - Stylesheet for pages
 - `test.html` - Testing page
 
@@ -113,4 +112,3 @@ The `assets/images/` directory contains all visual assets including logos, icons
 
 ## Note
 This project appears to be a web application with both frontend (HTML/CSS) and backend (PHP) components, designed to facilitate connections between job seekers and employers through skill-based assessments.
-```
