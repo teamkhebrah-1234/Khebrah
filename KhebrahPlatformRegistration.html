@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء حساب جديد | منصة خبرة | Khebrah Platform</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- إضافات الخطأ (بدون التأثير على التصميم) -->
+    <style>
+      .input-error {
+        border: 2px solid #e63946 !important;
+        background-color: #fff5f5;
+      }
+
+      .error-message {
+        color: #e63946;
+        font-size: 14px;
+        margin-top: 6px;
+        margin-bottom: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="auth-layout">
+        <div class="green-side">
+          <div>
+            <a class="logo-link">
+              <img
+                src="../assets/images/img_khebrah_logo_light.png"
+                alt="شعار منصة خبرة"
+                class="logo-image"
+              />
+            </a>
+          </div>
+          <div class="welcome-content">
+            <h2 class="welcome-title">أهلًا بك في منصة خبرة</h2>
+            <p class="welcome-description">
+              اكتشفوا الكفاءات الشابة من خلال مهام واقعية تكشف المهارات وتساعدكم
+              على اختيار الأفضل.
+            </p>
+          </div>
+        </div>
+
+        <div class="white-side">
+          <div class="form-header">
+            <div class="title-box">
+              <h1 class="form-title">إنشاء حساب جديد</h1>
+              <div class="title-underline"></div>
+            </div>
+          </div>
+
+          <form class="form-fields" id="companyRegistrationForm" action="company_register.php" method="POST">
+            <input
+              type="text"
+              name="company_name"
+              class="input-su"
+              placeholder="اسم الشركة"
+              required
+            />
+
+            <!-- حقل البريد الإلكتروني مع رسالة الخطأ -->
+            <input
+              type="email"
+              name="email"
+              id="emailInput"
+              class="input-su"
+              placeholder="البريد الإلكتروني الرسمي للشركة"
+              required
+            />
+            <p id="emailError" class="error-message">هذا البريد الإلكتروني مسجل مسبقًا</p>
+
+            <input
+              type="password"
+              name="password"
+              class="input-su"
+              placeholder="كلمة المرور"
+              required
+            />
+
+            <input
+              type="password"
+              name="confirm_password"
+              class="input-su"
+              placeholder="تأكيد كلمة المرور"
+              required
+            />
+
+            <button type="submit" class="submit-button">إنشاء حساب</button>
+
+            <div class="login-link-section">
+              <span class="login-text">لديك حساب بالفعل؟</span>
+              <a class="login-link">تسجيل الدخول</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // رابط الشعار → الصفحة الرئيسية
+      document.querySelector(".logo-link").addEventListener("click", function () {
+          window.location.href = "KhebrahPlatformLandingPage.html";
+      });
+
+      // رابط تسجيل الدخول → صفحة تسجيل الدخول
+      document.querySelector(".login-link").addEventListener("click", function (e) {
+          e.preventDefault();
+          window.location.href = "KhebrahPlatformLogin.php";
+      });
+
+      // ===== منطق تلوين الإيميل إذا كان مسجل مسبقًا =====
+      const params = new URLSearchParams(window.location.search);
+      const emailInput = document.getElementById("emailInput");
+      const emailError = document.getElementById("emailError");
+
+      if (params.get("error") === "email_exists") {
+        emailInput.classList.add("input-error");
+        emailError.style.display = "block";
+        emailInput.focus();
+      }
+
+      // يختفي اللون الأحمر عند بدء الكتابة
+      emailInput.addEventListener("input", function () {
+        emailInput.classList.remove("input-error");
+        emailError.style.display = "none";
+      });
+
+      // إضافة دعم لخطأ كلمة المرور غير المتطابقة (اختياري)
+      if (params.get("error") === "password_mismatch") {
+        alert("كلمتا المرور غير متطابقتين، حاول مرة أخرى.");
+      }
+    </script>
+  </body>
+</html>

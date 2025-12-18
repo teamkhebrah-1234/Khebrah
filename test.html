@@ -1,0 +1,117 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء حساب جديد | منصة خبرة | Khebrah Platform</title>
+    <meta
+      name="description"
+      content="انضم إلى منصة خبرة لاكتشاف الكفاءات الشابة من خلال مهام واقعية. سجل الآن وابدأ رحلتك في اختيار أفضل المواهب لشركتك."
+    />
+    <meta
+      name="keywords"
+      content="منصة خبرة, تسجيل حساب, اكتشاف المواهب, الكفاءات الشابة, مهام واقعية, توظيف"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="إنشاء حساب جديد | منصة خبرة" />
+    <meta
+      property="og:description"
+      content="انضم إلى منصة خبرة لاكتشاف الكفاءات الشابة من خلال مهام واقعية"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body class=".registration-body">
+    <main>
+      <div class="signup-layout">
+        <div class="green-side">
+          <div>
+            <a href="KhebrahPlatformLandingPage.html">
+              <img
+                src="../assets/images/img_khebrah_logo_light.png"
+                alt="شعار منصة خبرة"
+                class="logo-image"
+              />
+            </a>
+          </div>
+          <div class="welcome-content">
+            <h2 class="welcome-title">أهلًا بك في منصة خبرة</h2>
+            <p class="welcome-description">
+              اكتشفوا الكفاءات الشابة من خلال مهام واقعية تكشف المهارات وتساعدكم
+              على اختيار الأفضل.
+            </p>
+          </div>
+        </div>
+
+        <div class="white-side">
+          <div class="form-header">
+            <div class="title-box">
+              <h1 class="form-title">إنشاء حساب جديد</h1>
+              <div class="title-underline"></div>
+            </div>
+          </div>
+
+          <form class="form-fields" id="registrationForm">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="اسم الشركة"
+              required
+            />
+
+            <input
+              type="email"
+              class="input-field"
+              placeholder="البريد الإلكتروني الرسمي للشركة"
+              required
+            />
+
+            <input
+              type="password"
+              class="input-field"
+              placeholder="كلمة المرور"
+              required
+            />
+
+            <input
+              type="password"
+              class="input-field"
+              placeholder="تأكيد كلمة المرور"
+              required
+            />
+
+            <button type="submit" class="submit-button">إنشاء حساب</button>
+
+            <div class="login-link-section">
+              <span class="login-text">لديك حساب بالفعل؟</span>
+              <a href="KhebrahPlatformLogin.php" class="login-link"
+                >تسجيل الدخول</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const inputs = this.querySelectorAll(".input-field");
+          const password = inputs[2].value;
+          const confirmPassword = inputs[3].value;
+
+          if (password !== confirmPassword) {
+            alert("كلمة المرور وتأكيد كلمة المرور غير متطابقتين");
+            return;
+          }
+
+          alert("تم إنشاء الحساب بنجاح!");
+        });
+    </script>
+  </body>
+</html>
