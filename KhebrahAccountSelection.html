@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>اختر نوع حسابك | منصة خبرة للشركات والخريجين</title>
+    <meta
+      name="description"
+      content="اختر نوع حسابك في منصة خبرة - سواء كنت شركة تبحث عن المواهب أو خريج يبحث عن فرص عمل. ابدأ رحلتك المهنية معنا اليوم."
+    />
+    <meta
+      name="keywords"
+      content="خبرة، منصة توظيف، شركات، خريجين، وظائف، مواهب، توظيف عربي"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="اختر نوع حسابك | منصة خبرة للشركات والخريجين"
+    />
+    <meta
+      property="og:description"
+      content="اختر نوع حسابك في منصة خبرة - سواء كنت شركة تبحث عن المواهب أو خريج يبحث عن فرص عمل."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="layout">
+        <header class="top-green">
+          <a class="logo-link">
+            <img
+              src="../assets/images/img_khebrah_logo_light.png"
+              alt="شعار منصة خبرة"
+              class="logo-image"
+            />
+          </a>
+
+          <h1 class="main-heading">اختر نوع حسابك لبدء رحلتك</h1>
+        </header>
+
+        <section class="bottom-white">
+          <div class="selection-cards-row">
+            <button class="selection-button account-card company-card" aria-label="التسجيل كشركة">
+              <img
+                src="../assets/images/img_ic_outline_maps_home_work.svg"
+                alt="أيقونة الشركة"
+                class="selection-image"
+              />
+              <h2 class="selection-title">شركة</h2>
+            </button>
+
+            <button class="selection-button account-card graduate-card" aria-label="التسجيل كخريج">
+              <img
+                src="../assets/images/img_game_icons_graduate_cap.svg"
+                alt="أيقونة الخريج"
+                class="selection-image"
+              />
+              <h2 class="selection-title">خريج</h2>
+            </button>
+          </div>
+          <div class="login-link-section">
+            <span class="login-text">لديك حساب بالفعل؟</span>
+            <a class="login-link"
+              >تسجيل الدخول</a
+            >
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      // انتقال زر الشركة → صفحة تسجيل الشركة
+      document
+        .querySelector(".company-card")
+        .addEventListener("click", function () {
+          window.location.href = "KhebrahPlatformRegistration.html";
+        });
+
+      // انتقال زر الخريج → صفحة تسجيل الخريج
+      document
+        .querySelector(".graduate-card")
+        .addEventListener("click", function () {
+          window.location.href = "KhebrahPlatformRegistration1.html";
+        });
+
+      // 3. عبارة تسجيل الدخول → صفحة تسجيل الدخول
+      document
+        .querySelector(".login-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          window.location.href = "KhebrahPlatformLogin.php";
+        });
+
+      // 4. شعار خبرة → يرجع لصفحة الهبوط
+      document
+        .querySelector(".logo-link")
+        .addEventListener("click", function () {
+          window.location.href = "KhebrahPlatformLandingPage.html";
+        });
+
+      // دعم الإدخال من الكيبورد
+      document.querySelectorAll(".account-card").forEach((card) => {
+        card.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+    </script>
+  
+  </body>
+</html>
