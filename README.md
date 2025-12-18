@@ -21,7 +21,7 @@ khebrah/
 │   index.html
 │
 ├── assets/
-│   └── images/
+│   └── images
 │
 └── pages/
     ├── C.Home.php
