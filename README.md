@@ -6,7 +6,7 @@ The platform allows students and fresh graduates to complete short, realistic ta
 Through automated AI evaluation, continuous skill tracking, and portfolio generation, Khibrah helps users discover hidden skills such as leadership, problem-solving, creativity, and time management.  
 At the same time, employers can observe real performance instead of relying only on CVs and interviews.
 
-## khebrah file structure : 
+## Project Structure Overview : 
 
 khebrah
 │   .gitignore
