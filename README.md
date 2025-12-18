@@ -22,26 +22,6 @@ khebrah/
 │
 ├── assets/
 │   └── images/
-│       ├── img_carbon_task_complete.png
-│       ├── img_choice_icon.png
-│       ├── img_email_icon.svg
-│       ├── img_game_icons_graduate_cap.svg
-│       ├── img_group_195.svg
-│       ├── img_ic_outline_maps_home_work.svg
-│       ├── img_khebrah_logo_2.png
-│       ├── img_khebrah_logo_light.png
-│       ├── img_khebrah_logo_light_122x180.png
-│       ├── img_live_collaboration_rafiki.svg
-│       ├── img_mdi_light_arrow_up.svg
-│       ├── img_mdi_light_arrow_up_red_a700.svg
-│       ├── img_search.svg
-│       ├── img_si_expand_more_alt_line.svg
-│       ├── img_undraw_data_at_work_3tbf.svg
-│       ├── img_undraw_portfolio_update_6bro.svg
-│       ├── img_undraw_programming_j1zw.svg
-│       ├── img_undraw_teaching_58yg.svg
-│       ├── img_vector_white_a700_01.svg
-│       └── pexels-thirdman-7984742 1.png
 │
 └── pages/
     ├── C.Home.php
@@ -112,3 +92,7 @@ The `assets/images/` directory contains all visual assets including logos, icons
 
 ## Note
 This project appears to be a web application with both frontend (HTML/CSS) and backend (PHP) components, designed to facilitate connections between job seekers and employers through skill-based assessments.
+
+---
+
+**Regards, Khebrah Team**
